@@ -37,6 +37,6 @@ public class MergeOverlappingSubintervals {
 
         arr.add(new int[]{start, end});
 
-        return arr.toArray(new int[0][1]);
+        return arr.toArray(new int[0][]);
     }
 }
