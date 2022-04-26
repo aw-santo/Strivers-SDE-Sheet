@@ -6,7 +6,7 @@ import java.util.*;
 public class MajorityElement3 {
     public static void main(String[] args) {
         int[] nums = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
-        System.out.println(majorityElement1(nums));
+        // System.out.println(majorityElement1(nums));
 
         ArrayList<Integer> maj = majorityElement2(nums);
         HashSet<Integer> set = new HashSet<>(maj);
