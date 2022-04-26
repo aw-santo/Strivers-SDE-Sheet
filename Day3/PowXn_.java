@@ -1,6 +1,6 @@
 package Day3;
 
-public class PowX$n {
+public class PowXn_ {
     public static void main(String[] args) {
         double x = 2.00000;
         int n = 10;
@@ -9,19 +9,19 @@ public class PowX$n {
 
     static double myPow(double x, int n) {
         double ans = 1.0;
-        int nn = n;
-        if (nn < 0) {
-            nn = nn * -1;
+        long n_ = n;
+        if (n_ < 0) {
+            n_ = n_ * (-1);
         }
 
-        while (nn > 0) {
-            if ((nn & 1) != 0) {
+        while (n_ > 0) {
+            if ((n_ & 1) != 0) {
                 ans = ans * x;
-                nn--;
+                n_--;
             }
             else {
                 x = x * x;
-                nn/=2;
+                n_/=2;
             }
         }
         if (n < 0) {
